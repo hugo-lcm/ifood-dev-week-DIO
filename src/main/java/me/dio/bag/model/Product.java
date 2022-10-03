@@ -20,7 +20,7 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    private String unitaryValue;
+    private Double unitaryValue;
     @Builder.Default
     private Boolean available = true;
     @ManyToOne
