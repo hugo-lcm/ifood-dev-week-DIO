@@ -1,5 +1,6 @@
 package me.dio.bag.resource;
 
+import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
 import me.dio.bag.model.Bag;
 import me.dio.bag.model.Item;
@@ -7,6 +8,7 @@ import me.dio.bag.resource.dto.ItemDto;
 import me.dio.bag.service.BagService;
 import org.springframework.web.bind.annotation.*;
 
+@Api(value="/ifood-devweek/bags")
 @RestController
 @RequestMapping("/ifood-devweek/bags")
 @RequiredArgsConstructor
